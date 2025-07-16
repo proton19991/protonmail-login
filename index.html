@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProtonMail Login - Secure Private Email</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #0f1c2e;
+      color: #fff;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #7d44fa;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      z-index: 999;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00c3ff;
+    }
+
+    .hero {
+      margin-top: 70px;
+      background: #7d44fa;
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      animation: slideDown 1.5s ease forwards;
+    }
+
+    .hero p {
+      margin-top: 15px;
+      font-size: 18px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .marquee {
+      background: #122438;
+      color: #fff;
+      padding: 10px 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 15s linear infinite;
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(0%); }
+      to { transform: translateX(-100%); }
+    }
+
+    .login-form {
+      background: #1e324d;
+      padding: 30px;
+      max-width: 400px;
+      margin: 40px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      animation: fadeIn 1s ease-in-out;
+      background-color:white;
+    }
+
+    .login-form h3 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #7d44fa;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      background: #0e1c2b;
+      color: #fff;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 12px;
+      background: #7d44fa;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-form button:hover {
+      background: #8a55fa;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+      font-size: 16px;
+      background: white;
+      border-radius: 10px;
+      animation: fadeIn 1.5s ease;
+      color:black;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 24px;
+      }
+
+      .login-form {
+        margin: 20px 10px;
+        padding: 20px;
+      }
+
+      .container {
+        margin: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ProtonMail</h1>
+    <nav>
+      <a href="#login">Login</a>
+      <a href="#support">Support</a>
+      <a href="#setup">Setup</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>ProtonMail Login Account: How To Login ProtonMail?</h2>
+    <p>Learn how to access your ProtonMail login account securely. Follow easy steps for a smooth login experience and troubleshoot common ProtonMail login issues.</p>
+  </section>
+
+  <div class="marquee">
+    <span>Encrypted. Secure. Private. Welcome to the Future of Email — ProtonMail Login is Here 🚀</span>
+  </div>
+
+  <section class="login-form" id="login">
+    <h3>ProtonMail Login Account</h3>
+    <form>
+      <input type="email" placeholder="Email Address" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <section class="container" id="setup">
+    <h2>What Is a ProtonMail Login Account?</h2>
+    <p>A ProtonMail login account is your secure gateway to encrypted communication. It authenticates you and decrypts your inbox using client-side encryption, ensuring total privacy.</p>
+
+    <h3>How to Login</h3>
+    <ul>
+      <li>Open ProtonMail in your browser or app</li>
+      <li>Enter your ProtonMail email and password</li>
+      <li>Use 2FA if enabled</li>
+      <li>Access your encrypted inbox securely</li>
+    </ul>
+
+    <h3>Why ProtonMail is More Secure</h3>
+    <ul>
+      <li>End-to-End Encryption</li>
+      <li>No Password Access by Servers</li>
+      <li>Two-Factor Authentication</li>
+      <li>Auto Logout on Inactivity</li>
+    </ul>
+
+    <h3>Access Across Devices</h3>
+    <p>Whether on web, mobile, or tablet, ProtonMail gives a consistent, secure login experience. Download the app for real-time notifications and fast inbox access.</p>
+
+    <h3>Common Login Issues</h3>
+    <ul>
+      <li>Forgot Password? Use your recovery key or email.</li>
+      <li>2FA Troubles? Use backup codes.</li>
+      <li>Login Page Not Loading? Clear cache or switch browser.</li>
+    </ul>
+
+    <h3>Best Practices</h3>
+    <ul>
+      <li>Use strong, unique passwords</li>
+      <li>Enable 2FA and backup codes</li>
+      <li>Don’t use public Wi-Fi without a VPN</li>
+    </ul>
+
+    <h3>Locked Out?</h3>
+    <p>Use your recovery email, wait for a cooldown, or contact ProtonMail support via their official help center — no phone support due to security policy.</p>
+  </section>
+
+  <section class="container" id="support">
+    <h2>Need Help?</h2>
+    <p>For issues with your ProtonMail login account, always visit the official <a href="https://proton.me/support" target="_blank" style="color:#00c3ff;">ProtonMail Support Center</a>.</p>
+  </section>
+
+</body>
+</html>
